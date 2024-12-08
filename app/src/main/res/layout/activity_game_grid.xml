@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GameGridActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="182dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:background="@drawable/badge_background"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="Tic Tac Toe"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Player’s turn"
+        android:textColor="#212121"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:columnCount="3"
+        android:gravity="center_horizontal"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Box 1 -->
+        <LinearLayout
+            android:id="@+id/box1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/box1_x_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/box1_o_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/o"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Box 2 -->
+        <LinearLayout
+            android:id="@+id/box2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/box2_x_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/box2_o_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/o"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Box 3 -->
+        <LinearLayout
+            android:id="@+id/box3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/box3_x_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/box3_o_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/o"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Box 4 -->
+        <LinearLayout
+            android:id="@+id/box4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/box4_x_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/box4_o_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/o"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Box 5 -->
+        <LinearLayout
+            android:id="@+id/box5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/box5_x_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/box5_o_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/o"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Box 6 -->
+        <LinearLayout
+            android:id="@+id/box6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/box6_x_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/box6_o_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/o"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Box 7 -->
+        <LinearLayout
+            android:id="@+id/box7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/box7_x_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/box7_o_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/o"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Box 8 -->
+        <LinearLayout
+            android:id="@+id/box8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/box8_x_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/box8_o_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/o"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Box 9 -->
+        <LinearLayout
+            android:id="@+id/box9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/box9_x_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/box9_o_imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/o"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

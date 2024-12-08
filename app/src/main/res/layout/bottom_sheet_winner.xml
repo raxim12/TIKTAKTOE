@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/winner_cup" />
+
+    <TextView
+        android:id="@+id/winnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24sp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Player Won"
+        android:textColor="#212121"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:paddingStart="24sp"
+        android:paddingEnd="24sp"
+        android:text="Congrats on being the undisputed champion of pressing buttons like a pro."
+        android:textAlignment="center"
+        android:textColor="#757575"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="167dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24sp"
+        android:backgroundTint="#005BC0"
+        android:fontFamily="@font/inter_bold"
+        android:text="RESTART"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>
